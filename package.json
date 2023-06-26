@@ -1,0 +1,69 @@
+{
+  "name": "@juln/create-webpack-config",
+  "version": "1.0.0",
+  "description": "create-webpack-config",
+  "main": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
+  "files": [
+    "dist/*",
+    "src/*"
+  ],
+  "scripts": {
+    "build": "npx tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "keywords": [
+    "webpack",
+    "swc",
+    "config"
+  ],
+  "author": "juln",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/z-juln/create-webpack-config.git.git"
+  },
+  "devDependencies": {
+    "@types/glob": "^8.0.0",
+    "@types/node": "^18.8.4",
+    "type-fest": "^3.5.7",
+    "webpack": "^5.74.0",
+    "webpack-dev-server": "^4.11.1"
+  },
+  "dependencies": {
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.10",
+    "@swc/core": "^1.2.111",
+    "@vue/preload-webpack-plugin": "^2.0.0",
+    "browserslist": "^4.18.1",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.5.1",
+    "css-minimizer-webpack-plugin": "^4.2.2",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "html-webpack-tags-plugin": "^3.0.2",
+    "less": "^4.1.2",
+    "less-loader": "^10.2.0",
+    "mini-css-extract-plugin": "^2.6.1",
+    "ololog": "^1.1.175",
+    "postcss": "^8.4.5",
+    "postcss-loader": "^6.2.1",
+    "postcss-preset-env": "^7.0.1",
+    "postcss-px-to-viewport": "^1.1.1",
+    "react-refresh": "^0.14.0",
+    "style-loader": "^3.3.1",
+    "style-resources-loader": "^1.5.0",
+    "swc-loader": "^0.1.15",
+    "tsconfig-paths-webpack-plugin": "^4.0.0",
+    "typescript": "^4.5.2",
+    "url-loader": "^4.1.1",
+    "webpack-merge": "^5.8.0"
+  },
+  "peerDependencies": {
+    "webpack": "^5.74.0",
+    "webpack-dev-server": "^4.11.1"
+  }
+}
