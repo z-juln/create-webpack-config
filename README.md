@@ -1,6 +1,6 @@
 # create-webpack-config
 
-react-ts虎扑项目通用配置
+react-ts项目通用配置
 
 ## 默认配置概述
 
