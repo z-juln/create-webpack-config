@@ -29,11 +29,11 @@ const { devWebpackConfig, buildWebpackConfig } = createWebpackConfig(
   (webpackConfig, { isDev, merge }) => {
     webpackConfig = merge(webpackConfig, {
       devServer: {
-        open: 'http://dev.hupu.com:3000/a/b/c',
+        open: 'http://xxx.com:3000/a/b/c',
       },
     });
     // or
-    // webpackConfig.devServer.open = 'http://dev.hupu.com:3000/a/b/c';
+    // webpackConfig.devServer.open = 'http://xxx.com:3000/a/b/c';
     return webpackConfig;
   },
 );
@@ -108,7 +108,7 @@ webpackConfig.devServer.proxy
 方便查看最终配置以排查问题
 
 ```js
-const { default: createWebpackConfig, log } = require('@hupu/create-webpack-config');
+const { default: createWebpackConfig, log } = require('@juln/create-webpack-config');
 
 const { devWebpackConfig } = createWebpackConfig();
 
@@ -144,7 +144,7 @@ const { devWebpackConfig, buildWebpackConfig } = createWebpackConfig(
       'react': 'React',
       'react-dom': 'ReactDOM',
     };
-    webpackConfig.devServer.open = 'http:dev.hupu.com:3000/a/b/c';
+    webpackConfig.devServer.open = 'http://xxx.com:3000/a/b/c';
     return webpackConfig;
   },
 );
